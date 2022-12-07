@@ -1,3 +1,5 @@
+@extends('layouts.app')
+@section('content')
 <form action="{{route('votante.store')}}" method="POST">
     @csrf
     <div>
@@ -19,3 +21,4 @@
     <button type="submit">Guardar</button>
 
 </form>
+@endsection

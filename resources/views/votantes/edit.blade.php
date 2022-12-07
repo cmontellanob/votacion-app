@@ -1,3 +1,5 @@
+@extends('layouts.app')
+@section('content')
 <form action="{{route('votante.update',$votante->id)}}" method="POST">
     @csrf
     @method('PUT')
@@ -20,3 +22,4 @@
     <button type="submit">Guardar</button>
 
 </form>
+@endsection
